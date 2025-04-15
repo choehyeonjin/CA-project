@@ -26,7 +26,7 @@ xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x17 : xor   $d = $s ^ $t
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x19 : slt   $d = ($s < $t)
 01_00_1_x_00_0x_10001_xxx_0_0_000_00_xxxxx  // 0x1a : sltu  $d = ($s < $t)
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x1b : bltz  if ($s < 0) pc += i << 2
-xx_xx_0_1_10_0x_00110_xxx_0_x_111_00_xxxxx  // 0x1c : bgez  if ($s >= 0) pc += i << 2
+xx_xx_0_1_10_0x_10000_xxx_0_x_011_00_xxxxx  // 0x1c : bgez  if ($s >= 0) pc += i << 2
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x1d : j     pc = pc4 | i26 << 2
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x1e : jal   $31 = pc; pc = pc4 | i26 << 2
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x1f : beq   if ($s == $t) pc += i << 2
