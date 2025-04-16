@@ -5,7 +5,7 @@ xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x03 : sllv  $d = $t << $s
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x04 : srlv  $d = $t >> $s
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x05 : srav  $d = $t >>> $s
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x06 : jr    pc = $s
-10_11_1_x_xx_xx_xxxxx_xxx_0_0_000_10_xxxxx  // 0x07 : jalr  $31 = pc; pc = $s
+10_11_1_x_xx_xx_xxxxx_xxx_0_x_xxx_10_xxxxx  // 0x07 : jalr  $31 = pc; pc = $s
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x08 : break 
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x09 : mfhi  $d = hi
 xx_xx_x_x_xx_xx_xxxxx_xxx_x_x_xxx_xx_xxxxx  // 0x0a : mthi  hi = $s
