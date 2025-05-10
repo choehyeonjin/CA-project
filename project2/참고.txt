@@ -1,0 +1,24 @@
+x_x_0_xxx_0_xx_xxx_0_x_000_000_10001_0x_xxx_xx_0_xxxxxxxx_11  // 0x05:  sltu execution
+x_x_0_xxx_0_xx_xxx_0_x_000_000_01110_00_xxx_xx_0_xxxxxxxx_11  // 0x06:  srl execution
+x_x_0_xxx_0_xx_xxx_0_1_000_011_00100_0x_xxx_xx_0_xxxxxxxx_11  // 0x07:  addi execution
+x_x_0_xxx_0_00_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x08:  addi completion
+1_x_1_010_0_xx_xxx_0_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x09:  sh memory access
+1_1_0_111_0_xx_xxx_0_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_11  // 0x0a:  lb memory access
+x_x_0_xxx_0_00_001_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x0b:  lb write-back
+
+and, nor sltu, srl r-type completion(write-back) 똑같음
+addi는 목적지 레지스터만 다름
+
+addi, sh, lb execution 같음
+
+1. srl execution에서 ALUsrcB로 000을 사용, shamt값을 그대로 쓰는거니까 seu(sign extension unit)을 지날 필요가 없음
+2. bne, bgez에서 EXTmode = x, 이전 state에서 branch address 미리 계산하기에 extend 필요 없음
+3. bgez에서 PCwrite = 1
+4 x_x_0_xxx_0_11_100_1_x_000_010_00100_0x_000_00_1_xxxxxxxx_00  // 0x13:  jalr completion
+이유 : PCsrc는
+From ALU output
+From ALUOut Register
+From Jump Address
+From Current PC
+네개밖에없음.  근데 $rs를 jump pc로 사용해야 함. 
+따라서 alu에서 $rs+0을 연산하고 그 결과값을 pc에 쓴다.
