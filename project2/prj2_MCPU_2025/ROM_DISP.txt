@@ -3,10 +3,10 @@
 1_xxxxxxxx  // OP 000010  j
 1_xxxxxxxx  // OP 000011  jal
 1_xxxxxxxx  // OP 000100  beq
-1_xxxxxxxx  // OP 000101  bne
+0_00010001  // OP 000101  bne
 1_xxxxxxxx  // OP 000110  blez
 1_xxxxxxxx  // OP 000111  bgtz
-1_xxxxxxxx  // OP 001000  addi
+0_00000110  // OP 001000  addi
 1_xxxxxxxx  // OP 001001  addiu
 1_xxxxxxxx  // OP 001010  slti
 1_xxxxxxxx  // OP 001011  sltiu
@@ -30,7 +30,7 @@
 1_xxxxxxxx  // OP 011101 
 1_xxxxxxxx  // OP 011110 
 1_xxxxxxxx  // OP 011111 
-1_xxxxxxxx  // OP 100000  lb
+0_00001110  // OP 100000  lb
 1_xxxxxxxx  // OP 100001  lh
 1_xxxxxxxx  // OP 100010  
 1_xxxxxxxx  // OP 100011  lw
@@ -39,7 +39,7 @@
 1_xxxxxxxx  // OP 100110 
 1_xxxxxxxx  // OP 100111 
 1_xxxxxxxx  // OP 101000  sb
-1_xxxxxxxx  // OP 101001  sh
+0_00001100  // OP 101001  sh
 1_xxxxxxxx  // OP 101010  
 1_xxxxxxxx  // OP 101011  sw
 1_xxxxxxxx  // OP 101100 
@@ -64,14 +64,14 @@
 1_xxxxxxxx  // OP 111111 
 1_xxxxxxxx  // FN 000000  sll
 1_xxxxxxxx  // FN 000001 
-1_xxxxxxxx  // FN 000010  srl
+0_00001010  // FN 000010  srl
 1_xxxxxxxx  // FN 000011  sra
 1_xxxxxxxx  // FN 000100  sllv
 1_xxxxxxxx  // FN 000101 
 1_xxxxxxxx  // FN 000110  srlv
 1_xxxxxxxx  // FN 000111  srav
 1_xxxxxxxx  // FN 001000  jr
-1_xxxxxxxx  // FN 001001  jalr
+0_00010011  // FN 001001  jalr
 1_xxxxxxxx  // FN 001010 
 1_xxxxxxxx  // FN 001011 
 1_xxxxxxxx  // FN 001100 
@@ -98,14 +98,14 @@
 1_xxxxxxxx  // FN 100001  addu
 1_xxxxxxxx  // FN 100010  sub
 1_xxxxxxxx  // FN 100011  subu
-1_xxxxxxxx  // FN 100100  and
+0_00000010  // FN 100100  and
 1_xxxxxxxx  // FN 100101  or
 1_xxxxxxxx  // FN 100110  xor
-1_xxxxxxxx  // FN 100111  nor
+0_00000100  // FN 100111  nor
 1_xxxxxxxx  // FN 101000 
 1_xxxxxxxx  // FN 101001 
 1_xxxxxxxx  // FN 101010  slt
-1_xxxxxxxx  // FN 101011  sltu
+0_00001000  // FN 101011  sltu
 1_xxxxxxxx  // FN 101100 
 1_xxxxxxxx  // FN 101101 
 1_xxxxxxxx  // FN 101110 
@@ -127,7 +127,7 @@
 1_xxxxxxxx  // FN 111110 
 1_xxxxxxxx  // FN 111111 
 1_xxxxxxxx  // RI  00000  bltz
-1_xxxxxxxx  // RI  00001  bgez
+0_00010010  // RI  00001  bgez
 1_xxxxxxxx  // RI  00010 
 1_xxxxxxxx  // RI  00011 
 1_xxxxxxxx  // RI  00100 

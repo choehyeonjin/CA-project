@@ -1,24 +1,24 @@
 0_1_0_000_1_xx_xxx_0_x_011_001_00100_00_000_00_1_xxxxxxxx_11  // 0x00:  FETCH
 x_x_0_xxx_0_xx_xxx_0_1_011_100_00100_00_xxx_xx_0_xxxxxxxx_01  // 0x01:  DECODE/REG_READ/BRANCH_ADDR
-x_x_0_xxx_0_xx_xxx_0_x_000_000_00000_0x_xxx_xx_0_xxxxxxxx_11  // 0x02:  and execution
-x_x_0_xxx_0_01_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x03:  and writeback
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x04:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x05:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x06:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x07:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x08:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x09:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x0a:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x0b:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x0c:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x0d:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x0e:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x0f:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x10:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x11:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x12:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x13:  
-x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x14:  
+x_x_0_xxx_0_xx_xxx_0_x_000_000_00000_0x_xxx_xx_0_xxxxxxxx_11  // 0x02:  AND execution
+x_x_0_xxx_0_01_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x03: AND completion  
+x_x_0_xxx_0_xx_xxx_0_x_000_000_00010_0x_xxx_xx_0_xxxxxxxx_11  // 0x04:  NOR execution
+x_x_0_xxx_0_01_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x05:  NOR completion
+x_x_0_xxx_0_xx_xxx_0_1_000_011_00100_0x_xxx_xx_0_xxxxxxxx_11  // 0x06:  ADDI execution
+x_x_0_xxx_0_00_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x07:  ADDI completion
+x_x_0_xxx_0_xx_xxx_0_x_000_000_10001_0x_xxx_xx_0_xxxxxxxx_11  // 0x08:  SLTU execution
+x_x_0_xxx_0_01_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x09:  SLTU completion
+x_x_0_xxx_0_xx_xxx_0_x_000_000_01110_00_xxx_xx_0_xxxxxxxx_11  // 0x0a:  SRL execution
+x_x_0_xxx_0_01_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x0b:  SRL completion
+x_x_0_xxx_0_xx_xxx_0_1_000_011_00100_0x_xxx_xx_0_xxxxxxxx_11  // 0x0c:  SH execution
+1_x_1_010_0_xx_xxx_0_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x0d:  SH memory access
+x_x_0_xxx_0_xx_xxx_0_1_000_011_00100_0x_xxx_xx_0_xxxxxxxx_11  // 0x0e: LB execution  
+1_1_0_011_0_xx_xxx_0_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_11  // 0x0f:  LB memory access
+x_x_0_xxx_0_00_001_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x10:  LB write-back
+x_x_0_xxx_0_xx_xxx_0_x_000_000_00110_0x_101_01_1_xxxxxxxx_00  // 0x11:  BNE completion
+x_x_0_xxx_0_xx_xxx_0_x_000_010_10000_0x_010_01_1_xxxxxxxx_00  // 0x12:  BGEZ completion
+x_x_0_xxx_0_11_100_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_11  // 0x13:  JALR register write
+x_x_0_xxx_0_xx_xxx_0_x_000_010_00100_0x_000_00_1_xxxxxxxx_00  // 0x14:  JALR completion
 x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x15:  
 x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x16:  
 x_x_x_xxx_x_xx_xxx_x_x_xxx_xxx_xxxxx_xx_xxx_xx_x_xxxxxxxx_xx  // 0x17:  
