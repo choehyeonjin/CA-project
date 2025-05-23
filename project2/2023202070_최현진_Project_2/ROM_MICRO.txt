@@ -11,7 +11,7 @@ x_x_0_xxx_0_01_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x09:  SLTU com
 x_x_0_xxx_0_xx_xxx_0_x_000_000_01110_00_xxx_xx_0_xxxxxxxx_11  // 0x0a:  SRL execution
 x_x_0_xxx_0_01_000_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x0b:  SRL completion
 x_x_0_xxx_0_xx_xxx_0_1_000_011_00100_0x_xxx_xx_0_xxxxxxxx_11  // 0x0c:  SH execution
-1_x_1_010_0_xx_xxx_0_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x0d:  SH memory access
+1_0_1_010_0_xx_xxx_0_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x0d:  SH memory access
 x_x_0_xxx_0_xx_xxx_0_1_000_011_00100_0x_xxx_xx_0_xxxxxxxx_11  // 0x0e: LB execution  
 1_1_0_011_0_xx_xxx_0_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_11  // 0x0f:  LB memory access
 x_x_0_xxx_0_00_001_1_x_xxx_xxx_xxxxx_xx_xxx_xx_0_xxxxxxxx_00  // 0x10:  LB write-back
